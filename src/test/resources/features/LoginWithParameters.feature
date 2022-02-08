@@ -7,7 +7,7 @@ Feature: Login as different users
     And the title contains "Dashboard"
 
     #homework
-  @wip
+
   Scenario: login as a driver
     Given the user logged in as "driver"
     Then the user should be able to login

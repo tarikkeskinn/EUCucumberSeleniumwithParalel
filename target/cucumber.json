@@ -3,10 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-08T07:42:50.367Z",
+        "start_timestamp": "2022-02-08T14:35:22.508Z",
         "before": [
           {
             "result": {
+              "duration": 2998400,
               "status": "passed"
             },
             "match": {
@@ -14,14 +15,14 @@
             }
           }
         ],
-        "line": 11,
-        "name": "login as a driver",
+        "line": 51,
+        "name": "login as a given user user10",
         "description": "",
-        "id": "login-as-different-users;login-as-a-driver",
+        "id": "contacts-page;login-as-a-given-user-\u003cusername\u003e;;2",
         "after": [
           {
             "result": {
-              "duration": 844401600,
+              "duration": 975400800,
               "status": "passed"
             },
             "match": {
@@ -30,55 +31,69 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 36782932600,
+              "duration": 6665907200,
               "status": "passed"
             },
-            "line": 12,
-            "name": "the user logged in as \"driver\"",
+            "line": 40,
+            "name": "the user is on the login page",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"driver\"",
-                  "offset": 22
-                }
-              ],
-              "location": "com.vytrack.step_definitions.ContactsStepDefs.the_user_logged_in_as(java.lang.String)"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3031832400,
+              "duration": 6044289900,
               "status": "passed"
             },
-            "line": 13,
+            "line": 41,
+            "name": "the user logs in using following credentials",
+            "match": {
+              "location": "com.vytrack.step_definitions.ContactsStepDefs.the_user_logs_in_using_following_credentials(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "user10"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "UserUser123"
+                ]
+              },
+              {
+                "cells": [
+                  "firstname",
+                  "John"
+                ]
+              },
+              {
+                "cells": [
+                  "lastname",
+                  "Doe"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3006153400,
+              "status": "passed"
+            },
+            "line": 46,
             "name": "the user should be able to login",
             "match": {
               "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5011609000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "the title contains \"Dashboard\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Dashboard\"",
-                  "offset": 19
-                }
-              ],
-              "location": "com.vytrack.step_definitions.LoginStepDefs.the_title_contains(java.lang.String)"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
@@ -88,11 +103,11 @@
         ]
       }
     ],
-    "name": "Login as different users",
+    "name": "Contacts page",
     "description": "",
-    "id": "login-as-different-users",
+    "id": "contacts-page",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/LoginWithParameters.feature",
+    "uri": "file:src/test/resources/features/Contacts.feature",
     "tags": []
   }
 ]
