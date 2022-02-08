@@ -35,12 +35,17 @@ Feature: Contacts page
       | Reports & Segments |
       | System             |
 
-
-  Scenario: login as a given user
+  @wip
+  Scenario Outline: login as a given user <username>
     Given the user is on the login page
     When the user logs in using following credentials
-      | username  | user10      |
+      | username  | <username>  |
       | password  | UserUser123 |
-      | firstname | John        |
-      | lastname  | Doe         |
+      | firstname | <firstName> |
+      | lastname  | <lastName>  |
     Then the user should be able to login
+
+    Examples:
+
+      | username | firstName | lastName |
+      | user10   | John      | Doe      |
