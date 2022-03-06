@@ -1,1 +1,3 @@
-file:src/test/resources/features/AcountTypes.feature:16
+file:src/test/resources/features/NavigationMenu.feature:4:10:16
+file:src/test/resources/features/login.feature:10:14:18
+file:src/test/resources/features/AcountTypes.feature:4:16
